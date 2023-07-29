@@ -13,7 +13,15 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            Color.mainBackgroundColor.ignoresSafeArea()
+            Color.black.ignoresSafeArea()
+            MotionAnimationView()
+            ForEach(0..<50, id: \.self) { index in
+                Image(systemName: "star.fill")
+                    .resizable()
+                    .frame(width: 5, height: 5)
+                    .foregroundColor(.white)
+                    .position(randomPosition())
+            }
             VStack {
                 HStack {
                     Image(systemName: "laurel.leading")
@@ -31,6 +39,12 @@ struct MainView: View {
             }
             .padding(.all, 16)
         }
+    }
+    
+    private func randomPosition() -> CGPoint {
+        let x = CGFloat.random(in: 0...UIScreen.main.bounds.width)
+        let y = CGFloat.random(in: 0...UIScreen.main.bounds.height)
+        return CGPoint(x: x, y: y)
     }
 }
 

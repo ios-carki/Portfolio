@@ -16,13 +16,12 @@ struct CustomCardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .foregroundColor(.black.opacity(0.3))
-//                .foregroundStyle(LinearGradient(colors: [.teal.opacity(0.8), .purple.opacity(0.4)], startPoint: .top, endPoint: .bottom))
-//                .foregroundColor(.black.opacity(0.7))
+                .foregroundColor(.gray.opacity(0.3))
             
             VStack(spacing: 16) {
                 ZStack {
-                    CustomCircleView()
+                    Image("Earth")
+                        .resizable()
                         .frame(width: 300, height: 300)
                     Text("🤗")
                         .font(.system(size: 100))
@@ -45,9 +44,14 @@ struct CustomCardView: View {
                         
                         HStack {
                             Spacer()
-                            Text("자세히 보기")
-                                .font(.system(size: 12, weight: .bold))
-                                .foregroundColor(.gray)
+                            RoundedRectangle(cornerRadius: 12)
+                                .foregroundColor(.white)
+                                .overlay(
+                                    Text("자세히 보기")
+                                    .font(.system(size: 12))
+                                    .foregroundColor(.black)
+                                )
+                                .frame(width: 100)
                                 .onTapGesture {
                                     action?()
                                 }

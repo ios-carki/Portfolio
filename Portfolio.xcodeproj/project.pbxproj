@@ -27,6 +27,9 @@
 		C311BF5F2A75656A002F1ADB /* CustomListMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF5E2A75656A002F1ADB /* CustomListMainView.swift */; };
 		C311BF612A75659D002F1ADB /* CustomNormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF602A75659D002F1ADB /* CustomNormalView.swift */; };
 		C311BF632A756893002F1ADB /* CustomWithIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF622A756893002F1ADB /* CustomWithIconView.swift */; };
+		C311BF652A757375002F1ADB /* TestImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF642A757374002F1ADB /* TestImage.swift */; };
+		C311BF682A7578E5002F1ADB /* MotionAnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF672A7578E5002F1ADB /* MotionAnimationViewModel.swift */; };
+		C311BF6A2A75792F002F1ADB /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF692A75792F002F1ADB /* RandomGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		C311BF5E2A75656A002F1ADB /* CustomListMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListMainView.swift; sourceTree = "<group>"; };
 		C311BF602A75659D002F1ADB /* CustomNormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNormalView.swift; sourceTree = "<group>"; };
 		C311BF622A756893002F1ADB /* CustomWithIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWithIconView.swift; sourceTree = "<group>"; };
+		C311BF642A757374002F1ADB /* TestImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestImage.swift; sourceTree = "<group>"; };
+		C311BF672A7578E5002F1ADB /* MotionAnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationViewModel.swift; sourceTree = "<group>"; };
+		C311BF692A75792F002F1ADB /* RandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +184,8 @@
 		C311BF412A75458D002F1ADB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				C311BF662A7578D7002F1ADB /* MotionAnimations */,
 				C311BF5D2A7564FD002F1ADB /* CustomListView */,
-				C311BF4A2A7548F4002F1ADB /* MotionAnimationView.swift */,
 				C311BF422A75459B002F1ADB /* CustomCardView.swift */,
 				C311BF482A754812002F1ADB /* CustomCircleView.swift */,
 			);
@@ -225,8 +231,19 @@
 				C311BF5E2A75656A002F1ADB /* CustomListMainView.swift */,
 				C311BF602A75659D002F1ADB /* CustomNormalView.swift */,
 				C311BF622A756893002F1ADB /* CustomWithIconView.swift */,
+				C311BF642A757374002F1ADB /* TestImage.swift */,
 			);
 			path = CustomListView;
+			sourceTree = "<group>";
+		};
+		C311BF662A7578D7002F1ADB /* MotionAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				C311BF692A75792F002F1ADB /* RandomGenerator.swift */,
+				C311BF4A2A7548F4002F1ADB /* MotionAnimationView.swift */,
+				C311BF672A7578E5002F1ADB /* MotionAnimationViewModel.swift */,
+			);
+			path = MotionAnimations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,10 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C311BF3D2A754242002F1ADB /* CustomNavigationController.swift in Sources */,
+				C311BF682A7578E5002F1ADB /* MotionAnimationViewModel.swift in Sources */,
 				C311BF402A75432A002F1ADB /* MainView.swift in Sources */,
 				C311BF462A754616002F1ADB /* Color+Extentsion.swift in Sources */,
 				C311BF492A754812002F1ADB /* CustomCircleView.swift in Sources */,
+				C311BF6A2A75792F002F1ADB /* RandomGenerator.swift in Sources */,
 				C311BF5F2A75656A002F1ADB /* CustomListMainView.swift in Sources */,
+				C311BF652A757375002F1ADB /* TestImage.swift in Sources */,
 				C311BF432A75459B002F1ADB /* CustomCardView.swift in Sources */,
 				C311BF562A755479002F1ADB /* PortfolioViewModel.swift in Sources */,
 				C311BF612A75659D002F1ADB /* CustomNormalView.swift in Sources */,

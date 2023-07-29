@@ -16,6 +16,7 @@ struct PortfolioView: View {
             Color.mainBackgroundColor.ignoresSafeArea()
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 20) {
+                    // MARK: - Market
                     VStack(spacing: 8) {
                         SectionHeaderTitle(title: "My Application in market")
                         
@@ -38,6 +39,7 @@ struct PortfolioView: View {
                             )
                     }
                     
+                    // MARK: - AboutMe
                     VStack(spacing: 8) {
                         SectionHeaderTitle(title: "About Me")
                         
@@ -54,12 +56,12 @@ struct PortfolioView: View {
                                                             .iconModifier(width: 20, height: 20)
                                                     )
                                                     .frame(width: 30, height: 30)
-
+                                                
                                                 Text(viewModel.titleArray[index])
                                                     .font(.system(size: 16))
-
+                                                
                                                 Spacer()
-
+                                                
                                                 Image(systemName: "chevron.right")
                                             }
                                             if (index + 1) != viewModel.iconArray.count {
@@ -70,6 +72,20 @@ struct PortfolioView: View {
                                                     .padding(.horizontal, -12)
                                             }
                                             
+                                        }
+                                        .onTapGesture {
+                                            switch index {
+                                            case 0:
+                                                viewModel.contackMeSheet.toggle()
+                                            case 1:
+                                                viewModel.webSiteSheet.toggle()
+                                            case 2:
+                                                viewModel.techStackSheet.toggle()
+                                            case 3:
+                                                viewModel.portfolioSheet.toggle()
+                                            default:
+                                                print("Default")
+                                            }
                                         }
                                         .padding(.horizontal, 16)
                                     }
@@ -82,64 +98,19 @@ struct PortfolioView: View {
                 }
                 .padding(.horizontal, 16)
             }
-//            VStack(spacing: 16) {
-//                List {
-//                    Section {
-//                        Text("sfd")
-//                        Text("sfd")
-//                        Text("sfd")
-//                    } header: {
-//                        Text("My Application in market")
-//                    }
-//
-//                    // 마켓에 있는 앱 아이콘
-//                    Section {
-//                        ScrollView(.horizontal, showsIndicators: false) {
-//                            HStack(spacing: 20) {
-//                                ForEach(0..<2, id: \.self) { index in
-//                                    Image("MyApp\(index+1)")
-//                                        .resizable()
-//                                        .frame(width: 50, height: 50)
-//                                        .cornerRadius(12)
-//                                }
-//                            }
-//                        }
-//                    } header: {
-//                        Text("My Application in market")
-//                    }
-//
-//                    // 개인정보
-//                    Section {
-//                        ForEach(0..<viewModel.iconArray.count, id: \.self) { index in
-//                            HStack(spacing: 12) {
-//                                RoundedRectangle(cornerRadius: 6)
-//                                    .foregroundColor(viewModel.iconColorArray[index])
-//                                    .overlay(
-//                                        Image(systemName: viewModel.iconArray[index])
-//                                            .iconModifier(width: 20, height: 20)
-//                                    )
-//                                    .frame(width: 30, height: 30)
-//
-//                                Text(viewModel.titleArray[index])
-//                                    .font(.system(size: 16))
-//
-//                                Spacer()
-//
-//                                Image(systemName: "chevron.right")
-//                            }
-//                        }
-//                    } header: {
-//                        Text("About Me")
-//                    } footer: {
-//                        FooterView()
-//                    }
-//                }
-//            }
-//                .cornerRadius(12)
-//                .padding(.all, 16)
-            
         }
-        
+        .sheet(isPresented: $viewModel.contackMeSheet) {
+            Text("contackMeSheet")
+        }
+        .sheet(isPresented: $viewModel.webSiteSheet) {
+            Text("webSiteSheet")
+        }
+        .sheet(isPresented: $viewModel.techStackSheet) {
+            Text("techStackSheet")
+        }
+        .sheet(isPresented: $viewModel.portfolioSheet) {
+            Text("portfolioSheet")
+        }
     }
 }
 struct CellBackgroundView: View {
