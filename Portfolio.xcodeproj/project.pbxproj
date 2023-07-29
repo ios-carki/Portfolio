@@ -23,6 +23,10 @@
 		C311BF542A755471002F1ADB /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF532A755471002F1ADB /* PortfolioView.swift */; };
 		C311BF562A755479002F1ADB /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF552A755479002F1ADB /* PortfolioViewModel.swift */; };
 		C311BF582A755C67002F1ADB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C311BF572A755C67002F1ADB /* LICENSE */; };
+		C311BF5A2A755F50002F1ADB /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF592A755F50002F1ADB /* Image+Extension.swift */; };
+		C311BF5F2A75656A002F1ADB /* CustomListMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF5E2A75656A002F1ADB /* CustomListMainView.swift */; };
+		C311BF612A75659D002F1ADB /* CustomNormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF602A75659D002F1ADB /* CustomNormalView.swift */; };
+		C311BF632A756893002F1ADB /* CustomWithIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311BF622A756893002F1ADB /* CustomWithIconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		C311BF532A755471002F1ADB /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		C311BF552A755479002F1ADB /* PortfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
 		C311BF572A755C67002F1ADB /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C311BF592A755F50002F1ADB /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		C311BF5E2A75656A002F1ADB /* CustomListMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListMainView.swift; sourceTree = "<group>"; };
+		C311BF602A75659D002F1ADB /* CustomNormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNormalView.swift; sourceTree = "<group>"; };
+		C311BF622A756893002F1ADB /* CustomWithIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWithIconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +178,7 @@
 		C311BF412A75458D002F1ADB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				C311BF5D2A7564FD002F1ADB /* CustomListView */,
 				C311BF4A2A7548F4002F1ADB /* MotionAnimationView.swift */,
 				C311BF422A75459B002F1ADB /* CustomCardView.swift */,
 				C311BF482A754812002F1ADB /* CustomCircleView.swift */,
@@ -181,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				C311BF452A754616002F1ADB /* Color+Extentsion.swift */,
+				C311BF592A755F50002F1ADB /* Image+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,6 +217,16 @@
 				C311BF552A755479002F1ADB /* PortfolioViewModel.swift */,
 			);
 			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		C311BF5D2A7564FD002F1ADB /* CustomListView */ = {
+			isa = PBXGroup;
+			children = (
+				C311BF5E2A75656A002F1ADB /* CustomListMainView.swift */,
+				C311BF602A75659D002F1ADB /* CustomNormalView.swift */,
+				C311BF622A756893002F1ADB /* CustomWithIconView.swift */,
+			);
+			path = CustomListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,13 +305,17 @@
 				C311BF402A75432A002F1ADB /* MainView.swift in Sources */,
 				C311BF462A754616002F1ADB /* Color+Extentsion.swift in Sources */,
 				C311BF492A754812002F1ADB /* CustomCircleView.swift in Sources */,
+				C311BF5F2A75656A002F1ADB /* CustomListMainView.swift in Sources */,
 				C311BF432A75459B002F1ADB /* CustomCardView.swift in Sources */,
 				C311BF562A755479002F1ADB /* PortfolioViewModel.swift in Sources */,
+				C311BF612A75659D002F1ADB /* CustomNormalView.swift in Sources */,
 				C311BF502A7552A2002F1ADB /* Constants.swift in Sources */,
+				C311BF5A2A755F50002F1ADB /* Image+Extension.swift in Sources */,
 				C311BF4B2A7548F4002F1ADB /* MotionAnimationView.swift in Sources */,
 				C311BF1F2A754198002F1ADB /* AppDelegate.swift in Sources */,
 				C311BF542A755471002F1ADB /* PortfolioView.swift in Sources */,
 				C311BF212A754198002F1ADB /* SceneDelegate.swift in Sources */,
+				C311BF632A756893002F1ADB /* CustomWithIconView.swift in Sources */,
 				C311BF4E2A7551D9002F1ADB /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

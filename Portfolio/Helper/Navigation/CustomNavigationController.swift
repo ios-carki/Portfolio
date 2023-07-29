@@ -25,7 +25,7 @@ class CustomNavigationController: UINavigationController,UINavigationControllerD
 
         // Hide the default back button title
         viewController.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        viewController.navigationItem.backBarButtonItem?.tintColor = .black
+        viewController.navigationItem.backBarButtonItem?.tintColor = .white
     }
     
     @objc func handleBackButton() {

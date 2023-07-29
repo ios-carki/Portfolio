@@ -19,3 +19,15 @@ struct Constants {
                                 또한, CustomView (UIKit, SwiftUI), 반응형 프로그래밍 (RxSwift, Combine 등), MVC/MVVM 디자인 패턴, Swift와 Vapor를 사용한 백엔드 서버 및 API 개발, 그리고 블록체인 지갑 등과 같은 분야에서 경험과 지식을 갖고 있습니다.
                                 """
 }
+
+enum CustomListViewMode {
+    case normal // Only Text
+    case withIcon // Leading Image with Text
+    case fullMode // Leading Image with Text & Trailing Icon
+    case justImage // onlyImage
+}
+
+enum ImageMode {
+    case system
+    case custom
+}

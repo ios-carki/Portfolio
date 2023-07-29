@@ -16,8 +16,9 @@ struct CustomCardView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
+                .foregroundColor(.black.opacity(0.3))
 //                .foregroundStyle(LinearGradient(colors: [.teal.opacity(0.8), .purple.opacity(0.4)], startPoint: .top, endPoint: .bottom))
-                .foregroundColor(.black.opacity(0.7))
+//                .foregroundColor(.black.opacity(0.7))
             
             VStack(spacing: 16) {
                 ZStack {

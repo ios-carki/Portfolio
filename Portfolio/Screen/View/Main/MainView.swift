@@ -24,8 +24,8 @@ struct MainView: View {
                         .font(.system(size: 80, weight: .black))
                 }
                 .foregroundStyle(LinearGradient(colors: [.yellow.opacity(0.4), .brown], startPoint: .top, endPoint: .bottom))
-                CustomCardView(titleText: "iOS 개발자 Owen 입니다.", subTitleText: Constants.mySubTitleText) {
-                    navigation?.pushViewController(UIHostingController(rootView: PortfolioView(naviagtion: navigation)), animated: true)
+                CustomCardView(titleText: "iOS 개발자 Caki 입니다.", subTitleText: Constants.mySubTitleText) {
+                    navigation?.pushViewController(UIHostingController(rootView: PortfolioView(navigation: navigation)), animated: true)
                 }
                 Spacer()
             }
